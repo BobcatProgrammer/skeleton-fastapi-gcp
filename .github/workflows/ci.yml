@@ -64,7 +64,7 @@ jobs:
     env:
       APP_PATH: "/github/workspace/app/"
       IMG_NAME: "skeleton-fastapi-gcp"
-      REGISTRY: "ghcr.io/BobcatProgrammer"
+      REGISTRY: "ghcr.io/bobcatprogrammer"
       BUILDER: "gcr.io/buildpacks/builder:v1"
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
