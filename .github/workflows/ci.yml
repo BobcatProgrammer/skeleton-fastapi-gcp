@@ -50,7 +50,7 @@ jobs:
       - name: Check typing with mypy
         working-directory: ${{env.WORKING_DIR}}
         run: |
-          mypy app.py
+          mypy main.py
           mypy -p app
       - name: Test with pytest
         working-directory: ${{env.WORKING_DIR}}
