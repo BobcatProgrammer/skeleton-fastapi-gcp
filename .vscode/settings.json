@@ -1,0 +1,20 @@
+{
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.pyc": true,
+    "**/__pycache__": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true
+  },
+  "conventionalCommits.scopes": [
+    "fastapi",
+    "tools"
+  ]
+}
