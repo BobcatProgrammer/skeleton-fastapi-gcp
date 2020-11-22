@@ -25,6 +25,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install pipenv
+        run: |
+          python -m pip install --upgrade pipenv
       - uses: actions/cache@v1
         with:
           path: ~/.cache/pip
