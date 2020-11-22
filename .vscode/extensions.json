@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "vivaxy.vscode-conventional-commits",
+    "aaron-bond.better-comments",
+    "EditorConfig.EditorConfig",
+    "hbenl.vscode-test-explorer",
+    "littlefoxteam.vscode-python-test-adapter",
+    "redhat.vscode-yaml"
+  ]
+}
