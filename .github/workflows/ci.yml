@@ -80,7 +80,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.CR_PAT }}
-      - name: Pack Remote Build
-        uses: dfreilich/pack-action@v1.1
-        with:
-          args: "build --builder ${{ env.BUILDER }} --path ${{ env.APP_PATH }}  ${{ env.REGISTRY }}/${{ env.IMG_NAME }}:${{ env.GIT_SHORT_SHA }}"
+      - name: Build Docker IMG_NAME
+        working-directory: ${{APP_PATH}}
+        run: |
+          docker build
