@@ -10,9 +10,8 @@
     "**/.DS_Store": true,
     "**/*.pyc": true,
     "**/__pycache__": true,
-    "**/.mypy_cache": true
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true
   },
-  "conventionalCommits.scopes": [
-    "fastapi"
-  ]
+  "conventionalCommits.scopes": ["fastapi"]
 }

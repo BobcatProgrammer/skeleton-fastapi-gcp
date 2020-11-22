@@ -65,7 +65,6 @@ jobs:
       APP_PATH: "/github/workspace/app/"
       IMG_NAME: "skeleton-fastapi-gcp"
       REGISTRY: "ghcr.io/bobcatprogrammer"
-      BUILDER: "gcr.io/buildpacks/builder:v1"
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout
@@ -81,6 +80,5 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.CR_PAT }}
       - name: Build Docker IMG_NAME
-        working-directory: ${{APP_PATH}}
         run: |
-          docker build
+          make build
