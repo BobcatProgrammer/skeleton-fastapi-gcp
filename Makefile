@@ -10,9 +10,8 @@ ifeq ($(origin .RECIPEPREFIX), undefined)
 endif
 .RECIPEPREFIX = >
 
-BUILDER="gcr.io/buildpacks/builder:v1"
-REPO_NAME="ghcr.io/bobcatprogrammer
-IMAGE_NAME="skeleton-fastapi"
+REPO_NAME=ghcr.io/bobcatprogrammer
+IMAGE_NAME=skeleton-fastapi
 APP_DIR="app"
 
 
