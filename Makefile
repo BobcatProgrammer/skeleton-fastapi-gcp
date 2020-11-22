@@ -62,4 +62,4 @@ isort:
 .PHONY: test
 test: export PIPENV_VERBOSITY=-1
 test:
-> pipenv run pytest --cov --cov-fail-under=100
+> pipenv run pytest --cov=app/app --cov-fail-under=100
