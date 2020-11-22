@@ -27,6 +27,16 @@ build: ## Build the container image using pack CLI
 run: build ## Run container local
 > docker run --rm -it -p 8000:8000 $(REPO_NAME)/$(IMAGE_NAME)
 
+.PHONY: install
+install:
+> pipenv install
+> pipenv check
+
+.PHONY: install-dev
+install-dev:
+> pipenv install --dev
+> pipenv check
+
 .PHONY: lint
 lint: export PIPENV_VERBOSITY=-1
 lint: isort black flake8 mypy
@@ -37,7 +47,8 @@ mypy:
 
 .PHONY: flake8
 flake8:
-> pipenv run flake8
+> pipenv run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+> pipenv run flake8 . --count --exit-zero --statistics
 
 .PHONY: black
 black:

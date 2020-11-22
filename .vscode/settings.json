@@ -13,5 +13,8 @@
     "**/.mypy_cache": true,
     "**/.pytest_cache": true
   },
-  "conventionalCommits.scopes": ["fastapi"]
+  "conventionalCommits.scopes": [
+    "fastapi",
+    "tools"
+  ]
 }
